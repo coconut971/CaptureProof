@@ -1,0 +1,31 @@
+name: build-and-test
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.18.1'
+          cache: npm
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.402'
+      - run: npm ci
+      - run: npm run typecheck && npm run lint && npm run build
+      - run: dotnet restore CaptureProof.slnx --locked-mode
+      - run: dotnet test CaptureProof.slnx --no-restore
+        env:
+          CAPTUREPROOF_INTEROP_DIR: ${{ github.workspace }}/.data/interop
+          CAPTUREPROOF_RESTORE_INTEROP_DIR: ${{ github.workspace }}/.data/restore-interop
+      - run: npm test
+        env:
+          CAPTUREPROOF_INTEROP_DIR: ${{ github.workspace }}/.data/interop
+          CAPTUREPROOF_RESTORE_INTEROP_DIR: ${{ github.workspace }}/.data/restore-interop
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - run: node scripts/audit-deliverables.mjs
+      - run: npm run audit:public && npm run audit:docs
