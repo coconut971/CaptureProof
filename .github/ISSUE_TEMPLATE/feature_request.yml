@@ -1,0 +1,16 @@
+name: Integration or feature request
+description: Describe a developer use case and the module it concerns.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Integration need
+      description: Explain the workflow and extension point you need.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior and alternatives
+      description: Describe compatibility and any effect on authorization or receipt guarantees.

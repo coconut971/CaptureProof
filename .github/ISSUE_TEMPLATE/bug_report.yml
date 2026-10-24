@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible problem in a CaptureProof module.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Use synthetic data. Keep private photos, receipts, keys, databases and credentials out of issues. Follow SECURITY.md for security reports.
+  - type: input
+    id: module
+    attributes:
+      label: Affected module and version
+      placeholder: capture-web/headless, receipt-verifier, reference API or demo
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps and minimal reproduction
+      description: Include expected and actual behavior with synthetic data.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and checks
+      description: Browser, device and OS when relevant; trusted HTTPS; commands or tests executed.

@@ -1,0 +1,28 @@
+{
+  "name": "captureproof-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace apps/web",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run build --workspace @captureproof/capture-web && npm run build --workspace @captureproof/receipt-verifier && npm run typecheck --workspaces --if-present",
+    "lint": "eslint apps packages tests/e2e scripts --max-warnings 0",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "audit:public": "node scripts/audit-public.mjs",
+    "audit:docs": "node scripts/audit-docs.mjs",
+    "package:source": "node scripts/package-source.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "24.10.0",
+    "eslint": "10.13.0",
+    "typescript-eslint": "8.72.0",
+    "typescript": "6.0.2",
+    "vitest": "4.1.12"
+  }
+}
