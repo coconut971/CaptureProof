@@ -7,6 +7,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/coconut971/CaptureProof/actions/workflows/ci.yml"><img src="https://github.com/coconut971/CaptureProof/actions/workflows/ci.yml/badge.svg" alt="Build and test workflow" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-195b47" alt="Apache-2.0 license" /></a>
   <img src="https://img.shields.io/badge/core-TypeScript-3178c6" alt="TypeScript core" />
   <img src="https://img.shields.io/badge/UI-headless%20or%20Web%20Component-195b47" alt="Choose a headless integration or the optional Web Component" />

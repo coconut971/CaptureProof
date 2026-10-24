@@ -27,6 +27,8 @@ Le README donne les commandes Windows et Linux. `scripts/interop.ps1` reproduit 
 
 ## Couverture
 
+Le [premier passage public de GitHub Actions](https://github.com/coconut971/CaptureProof/actions/runs/40096126143) a également réussi sous Linux. Il couvre l’installation depuis les verrous, les types, le lint, les constructions, les tests .NET et TypeScript, les parcours navigateur et les audits des sources, packages et documents. Le badge du dépôt suit les exécutions suivantes ; ce résultat historique ne préjuge pas du résultat d’un autre commit.
+
 Le point d’entrée sans interface est importé dans un processus Node distinct, sans `HTMLElement` ni `document` ; l’entrée navigateur conserve le Web Component facultatif. Les archives ont aussi été installées dans un projet consommateur séparé : le moteur sans interface et le vérificateur indépendant s’importent sans React ni DOM. Une copie des sources publiques sans matériel de travail local passe les audits de publication et de documentation.
 
 Les tests xUnit utilisent WebApplicationFactory, de vrais fichiers SQLite isolés, leurs contraintes et un TimeProvider contrôlé pour les expirations. Ils couvrent politiques min/max, catégorie serveur malgré champs client, invitations concurrentes, consommation unique, expiration, refus/régénération/annulation, mauvais propriétaire, photos/reçus non autorisés, abonnement SignalR interdit, CSRF et origine.

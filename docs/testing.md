@@ -27,6 +27,8 @@ The README provides Windows and Linux commands. `scripts/interop.ps1` reproduces
 
 ## Coverage
 
+The [first public GitHub Actions run](https://github.com/coconut971/CaptureProof/actions/runs/40096126143) also completed successfully on Linux. Its workflow covers installation from locks, type checking, lint, builds, .NET and TypeScript tests, browser journeys and source/package/documentation audits. The repository's live workflow badge reports subsequent runs; this historical result does not predict a later commit's outcome.
+
 The headless entry point is imported by a separate Node process without `HTMLElement` or `document`; the default browser entry still mounts the optional Web Component. The packaged archives have also been installed in a separate consuming project: the headless engine and independent verifier import without React or a DOM. A public-source copy without local working material passes the publication and documentation audits.
 
 The xUnit tests use WebApplicationFactory, real isolated SQLite files and constraints, and a controlled TimeProvider for expiry. They cover min/max policies, server-owned category despite client fields, concurrent invitations, single consumption, expiry, rejection, regeneration, cancellation, wrong owners, unauthorized photo and receipt access, forbidden SignalR subscriptions, CSRF and origin checks.
