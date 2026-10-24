@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/captureproof-overview.svg" alt="CaptureProof mobile photo capture and signed receipt verification" width="1280" />
+  <img src="docs/assets/captureproof-banner.svg" alt="CaptureProof mobile photo capture and signed receipt verification" width="1280" />
 </p>
 
 <p align="center">
