@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/captureproof-overview.svg" alt="CaptureProof: compose a mobile capture engine, your backend and an independent receipt verifier" width="1280" />
+  <img src="docs/assets/captureproof-overview.svg" alt="CaptureProof mobile photo capture and signed receipt verification" width="1280" />
 </p>
 
 <p align="center">
@@ -14,9 +14,9 @@
   <img src="https://img.shields.io/badge/receipts-ES256%20%2F%20JWS-a66b22" alt="ES256 JWS receipts" />
 </p>
 
-# CaptureProof
+<h1 align="center">CaptureProof</h1>
 
-**Mobile photo capture that fits your application, with independently verifiable receipts when you need them.**
+<p align="center">Mobile photo capture and signed receipt verification</p>
 
 Use the headless TypeScript engine with your own interface and workflow. Add the supplied Web Component, the ASP.NET Core reference API or the React demo as needed. The receipt verifier works on its own, without calling a server.
 
@@ -35,7 +35,7 @@ CaptureProof is a working reference implementation. It binds **exact accepted fi
 
 The engine has no React dependency. The headless entry point does not load the supplied UI. Your backend can use another language if it implements the transport and receipt contracts; the server remains responsible for authorization, quotas and accepted bytes.
 
-## Your interface, the same capture engine
+## Custom interface example
 
 ```ts
 import { CaptureController } from '@captureproof/capture-web/headless';

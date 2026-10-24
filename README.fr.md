@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/captureproof-overview.svg" alt="CaptureProof : composez un moteur de capture mobile, votre backend et un vérificateur de reçus indépendant" width="1280" />
+  <img src="docs/assets/captureproof-overview.svg" alt="CaptureProof : capture photo mobile et vérification de reçus signés" width="1280" />
 </p>
 
 <p align="center">
@@ -14,9 +14,9 @@
   <img src="https://img.shields.io/badge/receipts-ES256%20%2F%20JWS-a66b22" alt="Reçus JWS ES256" />
 </p>
 
-# CaptureProof
+<h1 align="center">CaptureProof</h1>
 
-**La capture photo mobile adaptée à votre application, avec des reçus vérifiables indépendamment lorsque vous en avez besoin.**
+<p align="center">Capture photo mobile et vérification de reçus signés</p>
 
 Utilisez le moteur TypeScript sans interface avec vos écrans et votre parcours. Ajoutez au besoin le Web Component fourni, l’API de référence ASP.NET Core ou la démonstration React. Le vérificateur de reçus fonctionne seul, sans appeler de serveur.
 
@@ -35,7 +35,7 @@ CaptureProof est une implémentation de référence fonctionnelle. Le reçu lie 
 
 Le moteur ne dépend pas de React. Le point d’entrée sans interface ne charge pas le composant fourni. Votre backend peut utiliser un autre langage s’il respecte les contrats de transport et de reçu ; il conserve l’autorité sur les droits, les quotas et les octets acceptés.
 
-## Votre interface, le même moteur
+## Exemple avec une interface personnalisée
 
 ```ts
 import { CaptureController } from '@captureproof/capture-web/headless';

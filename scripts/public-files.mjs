@@ -12,7 +12,7 @@ export const publicDirectories = ['apps/web', 'packages/capture-web', 'packages/
 const ignoredDirectories = new Set(['node_modules', 'dist', 'bin', 'obj', '.data', 'TestResults', 'test-results', 'playwright-report']);
 // Only this generated, reviewed artwork may pass the otherwise blanket photo exclusion.
 export const approvedImageAssets = new Map([
-  ['docs/assets/captureproof-social.png', 'd6fa7bcae5fe7e8f3a8559c9f469e2e87c002aa5c88e9000274fb499e8e762ff'],
+  ['docs/assets/captureproof-social.png', '273d4027c80d4d5ce759017b772904ec4df6956f280e59120ad9ce78b085da93'],
 ]);
 const denied = /(^|\/)((?:AGENTS?|GPT|CHATGPT|CLAUDE|CODEX|GEMINI|COPILOT)(?:[._-][^/]*)?\.(?:md|txt|json|ya?ml)|\.agent-local|\.agents|\.codex|\.claude|\.cursor|\.tools|\.env(?:\..*)?)($|\/)|\.(?:db(?:-shm|-wal)?|sqlite3?|pfx|p12|pem|key|cer|crt|jws|jpe?g|png|webp|tgz|zip)$/i;
 export function assertPublic(file) {

@@ -1,45 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
-  <title id="title">CaptureProof: your workflow, verifiable photo files</title>
-  <desc id="description">Compose a headless mobile capture engine, your backend through a typed transport, and an independent ES256 receipt verifier. The supplied interface and React demo are optional.</desc>
+  <title id="title">CaptureProof</title>
+  <desc id="description">Mobile photo capture and signed receipt verification with a TypeScript controller, a compatible backend and an independent verifier</desc>
   <defs>
-    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#0b211d"/><stop offset="1" stop-color="#195b47"/></linearGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#d4e8de" stroke-opacity=".045"/></pattern>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#d9b67c" stroke-width="1.5"/></marker>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1 1L6 4L1 7" fill="none" stroke="#8a998d" stroke-width="1.2"/></marker>
   </defs>
-  <rect width="1280" height="640" rx="24" fill="url(#background)"/>
-  <rect width="1280" height="640" rx="24" fill="url(#grid)"/>
-  <g font-family="Arial, Helvetica, sans-serif">
-    <rect x="48" y="40" width="58" height="58" rx="15" fill="#eff5ed"/>
-    <path d="M87 58a17 17 0 1 0 0 23" fill="none" stroke="#195b47" stroke-width="7"/>
-    <circle cx="91" cy="69" r="4" fill="#d2a468"/>
-    <text x="124" y="82" fill="#f4f6ef" font-size="40" font-weight="700" letter-spacing="-1">CaptureProof</text>
-    <rect x="913" y="51" width="319" height="36" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#b8d2c4" stroke-opacity=".25"/>
-    <text x="1072" y="75" fill="#d9e8df" font-size="14" font-weight="700" letter-spacing="1.5" text-anchor="middle">COMPOSE YOUR INTEGRATION</text>
-    <text x="48" y="181" fill="#f5f5ec" font-size="59" font-weight="700" letter-spacing="-2">Your workflow.</text>
-    <text x="48" y="248" fill="#e3c18c" font-size="59" font-weight="700" letter-spacing="-2">Verifiable photo files.</text>
-    <text x="50" y="296" fill="#c2d6ca" font-size="22">A mobile capture engine. Your interface. An independent verifier.</text>
-    <g fill="#f5f6ef" stroke="#d0e2d4" stroke-opacity=".25">
-      <rect x="48" y="346" width="352" height="177" rx="18" fill-opacity=".06"/>
-      <rect x="464" y="346" width="352" height="177" rx="18" fill-opacity=".06"/>
-      <rect x="880" y="346" width="352" height="177" rx="18" fill-opacity=".06"/>
+  <rect x="1" y="1" width="1278" height="638" rx="18" fill="#f6f5ef" stroke="#d8ddd3"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <g fill="none" stroke="#24543f" stroke-width="3">
+      <path d="M617 66h11l5-8h14l5 8h11a5 5 0 0 1 5 5v28a5 5 0 0 1-5 5h-46a5 5 0 0 1-5-5V71a5 5 0 0 1 5-5z"/>
+      <circle cx="640" cy="84" r="11"/>
     </g>
-    <g fill="none" stroke="#d9b67c" stroke-width="2" marker-end="url(#arrow)"><path d="M414 435H448"/><path d="M830 435H864"/></g>
-    <g fill="#e3c18c" font-size="15" font-weight="700" letter-spacing="2">
-      <text x="72" y="385">01 / CAPTURE</text><text x="488" y="385">02 / CONNECT</text><text x="904" y="385">03 / VERIFY</text>
+    <text x="640" y="193" fill="#173e2e" font-size="68" font-weight="700" letter-spacing="-1.5">CaptureProof</text>
+    <text x="640" y="242" fill="#526258" font-size="27">Mobile photo capture and signed receipt verification</text>
+    <path d="M96 290H1184" stroke="#d8ddd3"/>
+    <g fill="none" stroke="#24543f" stroke-width="2.4" stroke-linejoin="round">
+      <rect x="217" y="343" width="46" height="34" rx="5"/>
+      <path d="M228 343l5-7h14l5 7"/>
+      <circle cx="240" cy="360" r="9"/>
+      <path d="M628 341l-15 17 15 17m24-34 15 17-15 17m-8-37-8 40"/>
+      <path d="M1025 337h21l12 12v34h-33zM1046 337v12h12m-25 12h17m-17 9h17"/>
     </g>
-    <g fill="#f5f5ec" font-size="23" font-weight="700">
-      <text x="72" y="429">Headless TypeScript core</text><text x="488" y="429">Your backend + workflow</text><text x="904" y="429">Portable signed receipts</text>
+    <g fill="none" stroke="#8a998d" stroke-width="1.8" marker-end="url(#arrow)">
+      <path d="M382 400H482"/>
+      <path d="M798 400H898"/>
     </g>
-    <g fill="#c2d6ca" font-size="17">
-      <text x="72" y="463">Custom UI or Web Component</text><text x="72" y="490">Mobile browser camera</text>
-      <text x="488" y="463">Typed transport contract</text><text x="488" y="490">Reference ASP.NET Core API</text>
-      <text x="904" y="463">Exact bytes + declared context</text><text x="904" y="490">ES256 / JWS · explicit key trust</text>
+    <g fill="#173e2e" font-size="28" font-weight="700">
+      <text x="240" y="423">Capture</text>
+      <text x="640" y="423">Backend</text>
+      <text x="1040" y="423">Verification</text>
     </g>
-    <text x="48" y="580" fill="#f2f3e9" font-size="17" font-weight="700">Optional React demo</text>
-    <circle cx="244" cy="574" r="3" fill="#d5af77"/>
-    <text x="263" y="580" fill="#f2f3e9" font-size="17" font-weight="700">Independent modules</text>
-    <circle cx="470" cy="574" r="3" fill="#d5af77"/>
-    <text x="489" y="580" fill="#f2f3e9" font-size="17" font-weight="700">Apache-2.0</text>
-    <text x="1232" y="580" fill="#c2d6ca" font-size="16" text-anchor="end">Bring your UI. Keep the integrity contract.</text>
+    <g fill="#526258" font-size="19">
+      <text x="240" y="460">TypeScript controller</text>
+      <text x="640" y="460">Reference API or custom backend</text>
+      <text x="1040" y="460">Receipt and original files</text>
+    </g>
+    <text x="640" y="558" fill="#69756c" font-size="20">Optional Web Component and React demo</text>
   </g>
 </svg>
